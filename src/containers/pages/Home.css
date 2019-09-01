@@ -1,4 +1,5 @@
 .homePageContainer{
+
     display: flex;
     justify-content: center;
 
@@ -8,7 +9,7 @@
 
 .homePage{
     display: flex;
-
+    margin-top:8rem;
 
     flex-direction: row;
     flex-wrap: nowrap;
@@ -16,7 +17,7 @@
 
     max-width: 100rem;
     min-width: 80rem;
-    min-height: 100vh;
+    min-height: 150vh;
 
     border-left:  dashed ;
     border-right:  dashed;

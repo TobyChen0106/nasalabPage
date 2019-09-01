@@ -14,16 +14,42 @@ import Authors from "./containers/pages/Authors";
 
 
 export default class App extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            lastwindowScrollY: 0,
+        }
+    }
+    changeHeaderHeight = () => {
+        if (this.state.lastwindowScrollY < 100 & window.scrollY >= 100) {
+            // console.log(this.headerRef.style);
+            this.headerRef.style.animation = "headerToolbarAnimationScrollDown 0.5s"
+            this.headerRef.style.height = '2.5rem';
+            // this.headerIconRef.display: none;
+            this.setState({lastwindowScrollY: 100});
+        }else if (this.state.lastwindowScrollY >= 100 & window.scrollY < 100){
+            this.headerRef.style.animation = "headerToolbarAnimationScrollUp 0.5s"
+            this.headerRef.style.height = '8rem';
+            this.setState({lastwindowScrollY: 0});
+        }
+    }
+    componentDidMount = () => {
+        window.addEventListener('scroll', this.changeHeaderHeight);
+    }
+    toHome = () =>{
+        window.scrollTo(0 ,0);
+    }
     render() {
         return (
             <BrowserRouter>
                 <div className="container">
-                    <div className="headerToolbar">
+                    <div className="headerToolbar" ref={el => this.headerRef = el}>
                         <div className="headerToolbarLeft">
                             <NavLink to="/" className="NavLink"><div className="homePageIcon"><img className="homePageIconImg" src={homePageIcon} /></div></NavLink>
                         </div>
                         <div className="headerToolbarCenter">
-                            <NavLink to="/" style={{ textDecoration: 'none' }}>
+                            <NavLink to="/" style={{ textDecoration: 'none' }} onClick={this.toHome}>
                                 <div className="button"><p className="buttonName">HOME</p></div>
                             </NavLink>
                             <NavLink to="/posts" style={{ textDecoration: 'none' }}>
