@@ -1,0 +1,24 @@
+.homePageContainer{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.homePage{
+    display: flex;
+
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    max-width: 100rem;
+    min-width: 80rem;
+    min-height: 100vh;
+
+    border-left:  dashed ;
+    border-right:  dashed;
+    border-color: rgba(226, 191, 113, 1);
+}
