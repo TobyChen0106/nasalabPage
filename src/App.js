@@ -27,18 +27,18 @@ export default class App extends Component {
             this.headerRef.style.animation = "headerToolbarAnimationScrollDown 0.5s"
             this.headerRef.style.height = '2.5rem';
             // this.headerIconRef.display: none;
-            this.setState({lastwindowScrollY: 100});
-        }else if (this.state.lastwindowScrollY >= 100 & window.scrollY < 100){
+            this.setState({ lastwindowScrollY: 100 });
+        } else if (this.state.lastwindowScrollY >= 100 & window.scrollY < 100) {
             this.headerRef.style.animation = "headerToolbarAnimationScrollUp 0.5s"
             this.headerRef.style.height = '8rem';
-            this.setState({lastwindowScrollY: 0});
+            this.setState({ lastwindowScrollY: 0 });
         }
     }
     componentDidMount = () => {
         window.addEventListener('scroll', this.changeHeaderHeight);
     }
-    toHome = () =>{
-        window.scrollTo(0 ,0);
+    toHome = () => {
+        window.scrollTo(0, 0);
     }
     render() {
         return (
@@ -63,14 +63,15 @@ export default class App extends Component {
                             <div className="button loginButton" style={{ textDecoration: 'none' }}><p className="buttonName">Login</p></div>
                         </div>
                     </div>
-
-                    <Switch >
-                        <Route exact path="/" component={Home}></Route>
-                        <Route exact path="/" component={Home}></Route>
-                        <Route exact path="/posts" component={Posts} />
-                        <Route exact path="/authors" component={Authors} />
-                        <Route path="/posts/:id?" component={PostRender} />
-                    </Switch>
+                    <div className = "contentContainer">
+                        <Switch >
+                            <Route exact path="/" component={Home}></Route>
+                            <Route exact path="/" component={Home}></Route>
+                            <Route exact path="/posts" component={Posts} />
+                            <Route exact path="/authors" component={Authors} />
+                            <Route path="/posts/:id?" component={PostRender} />
+                        </Switch>
+                    </div>
                 </div>
             </BrowserRouter>
         );
