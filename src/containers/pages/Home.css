@@ -1,11 +1,47 @@
 .homePageContainer{
     display: flex;
-    justify-content: center;
-
+    flex-flow: column nowrap;
     width: 100%;
     height: 100%;
 }
 
-.homePage{
-    
+.homePagePosts{
+    margin-top:4rem;
+    margin-left:4rem;
+    margin-right:4rem;
+
+    max-width: 80rem;
+    min-width: 60rem;
+    min-height: 150vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.postPreview{
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+
+    width: 24rem;
+    height: 30rem;
+    border:5px #000000 solid;
+}
+
+.information{
+    margin-top:5rem;
+    margin-bottom:5rem;
+
+    width: 100%;
+    height: 50rem;
+    border:5px #000000 solid;
+}
+
+.footerBar{
+    width: 100%;
+    height: 20rem;
+    background: rgba(234,16,44,1);
+    color: rgba(255,255,255,1);
 }

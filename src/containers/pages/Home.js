@@ -9,8 +9,7 @@ class Home extends Component {
 		const lists = postIDs.map((i, index) => (
 			<div key={index} className="dim w5 ma4">
 				<NavLink to={"/posts/" + i} className="link black">
-					<div className=
-						"flex justify-center items-center w5 h4 bg-light-blue ">
+					<div className = "postPreview">
 						<div></div>Posts #{i}
 					</div>
 				</NavLink>
@@ -18,8 +17,18 @@ class Home extends Component {
 		));
 		return (
 			<div className="homePageContainer">
-				<div className="homePage">
+				<div className="homePagePosts">
 					{lists}
+				</div>
+				<div className="information">
+					<div className="professor">
+						陳政維
+					</div>
+				</div>
+				<div className="footerBar">
+					<div className="">
+						©2019 by Next-generation Automated Surgical Apparatus Lab.
+					</div>
 				</div>
 			</div>
 		)
