@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
 import "./Home.css"
 import { BrowserRouter } from 'react-router-dom'
-
+import ScrollToTop from '../../components/ScrollToTop'
 class Home extends Component {
 	render() {
 		const postIDs = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];

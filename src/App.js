@@ -3,6 +3,7 @@ import { BrowserRouter, NavLink, Switch, Route, Redirect } from "react-router-do
 import "./App.css"
 
 import homePageIcon from "./images/homeicon.png";
+import ScrollToTop from './components/ScrollToTop'
 // import Button from 'react-bootstrap/Button';
 // import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 
@@ -43,6 +44,7 @@ export default class App extends Component {
     render() {
         return (
             <BrowserRouter>
+            <ScrollToTop>
                 <div className="container">
                     <div className="headerToolbar" ref={el => this.headerRef = el}>
                         <div className="headerToolbarLeft">
@@ -73,6 +75,7 @@ export default class App extends Component {
                         </Switch>
                     </div>
                 </div>
+                </ScrollToTop>
             </BrowserRouter>
         );
     }
