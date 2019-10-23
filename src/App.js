@@ -7,9 +7,10 @@ import ScrollToTop from './components/ScrollToTop'
 // import Button from 'react-bootstrap/Button';
 // import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 
-import Posts from "./containers/pages/Posts/Posts";
+import Posts from "./containers/pages/Posts";
 import PostRender from "./containers/pages/Posts/PostRender";
 import Home from "./containers/pages/Home";
+import News from "./containers/pages/News";
 import Authors from "./containers/pages/Authors";
 
 
@@ -54,6 +55,9 @@ export default class App extends Component {
                             <NavLink to="/" style={{ textDecoration: 'none' }} onClick={this.toHome}>
                                 <div className="button"><p className="buttonName">HOME</p></div>
                             </NavLink>
+                            <NavLink to="/news" style={{ textDecoration: 'none' }} onClick={this.toHome}>
+                                <div className="button"><p className="buttonName">NEWS</p></div>
+                            </NavLink>
                             <NavLink to="/posts" style={{ textDecoration: 'none' }}>
                                 <div className="button"><p className="buttonName">POSTS</p></div>
                             </NavLink>
@@ -68,7 +72,7 @@ export default class App extends Component {
                     <div className = "contentContainer">
                         <Switch >
                             <Route exact path="/" component={Home}></Route>
-                            <Route exact path="/" component={Home}></Route>
+                            <Route exact path="/news" component={News}></Route>
                             <Route exact path="/posts" component={Posts} />
                             <Route exact path="/authors" component={Authors} />
                             <Route path="/posts/:id?" component={PostRender} />

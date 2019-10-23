@@ -8,34 +8,26 @@ import ScrollToTop from '../../components/ScrollToTop'
 import { postlist } from '../../posts/postlist.js'
 
 
-class Home extends Component {
+class Posts extends Component {
 	render() {
-		const lists = postlist.map((i, index) => (
+		const lists = postlist.filter(i => i.tag === "Research").map((i, index) => (
+			<div key={index} className="">
 				<NavLink style={{ textDecoration: 'none' }} to={"/posts/" + i} className="link black">
 					<div className="postPreview" style= {i.previewStyle}>
-							<img className="previewImage" src={i.previewImage} align="middle" style={i.previewImageStyle}/>
-							<div className="previewTitle"  style={i.previewTitleStyle}> {i.previewTitle}</div>
+							<img className="previewImage" src={i.previewImage} style={i.previewImageStyle}/>
+							<div className="previewTitle"> {i.previewTitle}</div>
 					</div>
 				</NavLink>
+			</div>
 		));
 		return (
 			<div className="homePageContainer">
 				<div className="homePagePosts">
 					{lists}
 				</div>
-				<div className="information">
-					<div className="professor">
-						information
-					</div>
-				</div>
-				<div className="footerBar">
-					<div className="copyright">
-						©2019 by Next-generation Automated Surgical Apparatus Lab.
-					</div>
-				</div>
 			</div>
 		)
 	}
 }
 
-export default Home
+export default Posts

@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     align-items: center;
+    min-height: 150vh;
 }
 
 .homePagePosts{
@@ -13,15 +14,16 @@
 
     max-width: 80rem;
     min-width: 60rem;
-    min-height: 150vh;
+    
+    
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
 }
 
 .postPreview{
+    display: block;
     margin-top:1.5rem;
     margin-bottom:1.5rem;
     margin-left:0.5rem;
@@ -29,9 +31,43 @@
 
     width: 24rem;
     height: 30rem;
-    border:5px #000000 solid;
+    overflow: hidden;
+
+    color: #ffffff;
+
+    /* border:5px #000000 solid; */
+    outline: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
+.previewImage{
+    position: relative ;
+    text-align: center;
+
+}
+.previewTitle{
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+
+    height: 30%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+
+    /* font-weight:bold; */
+    letter-spacing: 0.2rem;
+   
+    position: relative ;
+    vertical-align: sub;
+}
 .information{
     margin-top:5rem;
     margin-bottom:5rem;

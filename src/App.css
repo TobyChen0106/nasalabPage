@@ -61,6 +61,7 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    z-index: 99;
 }
 .headerToolbarLeft{
     background: #ffffff;
@@ -115,6 +116,7 @@ body{
 }
 .button{
     background: rgba(234,16,44,1);
+
     color: #ffffff;
     text-align: center;
     font-size: 1rem;
@@ -126,6 +128,7 @@ body{
     max-height: 100%;
 
     transition: 0.5s;
+
     outline: none;
     
     -webkit-touch-callout: none; /* iOS Safari */
@@ -136,7 +139,6 @@ body{
     user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 .buttonName{
-    
     margin:0 0;
     padding-top:0 0;
 }
