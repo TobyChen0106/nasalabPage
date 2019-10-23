@@ -4,7 +4,8 @@ import "./Home.css"
 import { BrowserRouter } from 'react-router-dom'
 import ScrollToTop from '../../components/ScrollToTop'
 
-import posts from '../posts/posts.json'
+// import posts from '../posts/posts'
+var post = require('../../posts/posts.json');
 
 class Home extends Component {
 	render() {
