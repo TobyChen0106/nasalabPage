@@ -8,7 +8,7 @@ import ScrollToTop from './components/ScrollToTop'
 // import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 
 import Posts from "./containers/pages/Posts";
-import PostRender from "./containers/pages/Posts/PostRender";
+import PostRender from "./containers/pages/_Posts/PostRender";
 import Home from "./containers/pages/Home";
 import News from "./containers/pages/News";
 import Authors from "./containers/pages/Authors";
