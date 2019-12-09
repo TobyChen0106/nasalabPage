@@ -25,10 +25,23 @@ class Home extends Component {
 		));
 		return (
 			<div className="homePageContainer">
+				<div className="labName">
+					<div className="labName-main">
+						Next-generation Automated Surgical Apparatus Lab
+                    </div>
+					<div className="labName-sub">
+						National Taiwan University, Taipei, Taiwan, since 2018
+                    </div>
+					<div className="labName-vision">
+						Our Vision: Become the Bridge Between Human and Technology
+                    </div>
+
+				</div>
+				{/* <div className="shaddow-homePage-bottom" /> */}
 				<div className="homePagePosts">
 					{lists}
 				</div>
-				<Information/>
+				<Information />
 			</div>
 		)
 	}

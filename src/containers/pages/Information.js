@@ -8,21 +8,26 @@ class Information extends Component {
 	render() {
 		return (
 			<div className="information">
+				<div className="information-content">
+
+				</div>
 				<div className="people">
 					<div className="professor">
-						<div className="professor-image-holder">
-							<ExampleComponent
-								className="professor-image"
-								image={CWChen}
-								roundedColor="#321124"
-								imageWidth="400"
-								imageHeight="400"
-								roundedSize="0"
-							/>
-						</div>
+						<a href="https://scholar.google.com/citations?user=spTwAGcAAAAJ&hl=zh-TW">
+							<div className="professor-image-holder">
+								<ExampleComponent
+									className="professor-image"
+									image={CWChen}
+									roundedColor="#321124"
+									imageWidth="400"
+									imageHeight="400"
+									roundedSize="0"
+								/>
+							</div>
+						</a>
 						<div className="professor-name">
 							<div className="professor-name-english">
-								Prof. Cheng-Wei Chen 
+								Prof. Cheng-Wei Chen
 							</div>
 							<div className="professor-name-chineese">
 								陳政維
