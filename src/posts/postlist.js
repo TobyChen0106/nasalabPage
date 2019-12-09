@@ -10,7 +10,9 @@ import newweb from "./images/newweb.jpg"
 export const postlist = [
     {
         previewTitle: "To Prospective Students",
-        tag: "News",
+        previewTag: "News",
+        previewTagStyle:  { background: "#F28705" },
+
         previewStyle: { background: "rgb(0, 0, 0)" },
         previewImage: together,
         previewImageStyle: {
@@ -18,12 +20,13 @@ export const postlist = [
             right: "10px",
             maxHeight: "70%"
         },
-        previewTitleStyle: { background: "rgb(234, 158, 16)" },
+        previewTitleStyle: { background: "#F29F05" },
         content: "Toprospectivestudents.md"
     },
     {
         previewTitle: "New website online!",
-        tag: "News",
+        previewTag: "News",
+        previewTagStyle:  { background: "#F28705" },
         previewStyle: { background: "rgb(0, 0, 0)" },
         previewImage: newweb,
         previewImageStyle: {
@@ -31,12 +34,13 @@ export const postlist = [
             right: "10px",
             maxHeight: "70%"
         },
-        previewTitleStyle: { background: "rgb(234, 158, 16)" },
+        previewTitleStyle: { background: "#F29F05" },
         content: "Toprospectivestudents.md"
     },
     {
         previewTitle: "Microsurgical Robots",
-        tag: "Research",
+        previewTag: "Research",
+        previewTagStyle:  { background: "#739784" },
         previewStyle: { background: "rgb(0, 0, 0)" },
         previewImage: ToprospectivestudentsImage,
         previewImageStyle: {
@@ -44,12 +48,13 @@ export const postlist = [
             right: "10px",
             maxHeight: "70%"
         },
-        previewTitleStyle: { background: "rgb(234, 158, 16)" },
+        previewTitleStyle: { background: "#739784" },
         content: "Toprospectivestudents.md"
     },
     {
         previewTitle: "Human-Robot Interaction",
-        tag: "Research",
+        previewTag: "Research",
+        previewTagStyle:  { background: "#739784" },
         previewStyle: { background: "rgb(230, 230, 230)" },
         previewImage: Joystick,
         previewImageStyle: {
@@ -57,12 +62,13 @@ export const postlist = [
             left: "33px",
             maxHeight: "70%"
         },
-        previewTitleStyle: { background: "rgb(234, 158, 16)" },
+        previewTitleStyle: { background: "#739784" },
         content: "Toprospectivestudents.md"
     },
     {
         previewTitle: "Embedded and Automated System",
-        tag: "Research",
+        previewTag: "Research",
+        previewTagStyle:  { background: "#739784" },
         previewStyle: { background: "rgb(0, 0, 0)" },
         previewImage: toolChanger,
         previewImageStyle: {
@@ -70,12 +76,13 @@ export const postlist = [
             right: "10px",
             maxHeight: "70%"
         },
-        previewTitleStyle: { background: "rgb(234, 158, 16)" },
+        previewTitleStyle: { background: "#739784" },
         content: "Toprospectivestudents.md"
     },
     {
         previewTitle: "Advanced Control and Optimization",
-        tag: "Research",
+        previewTag: "Research",
+        previewTagStyle:  { background: "#739784" },
         previewStyle: { background: "rgb(0, 0, 0)" },
         previewImage: drawMachine,
         previewImageStyle: {
@@ -83,7 +90,7 @@ export const postlist = [
             right: "10px",
             maxHeight: "70%"
         },
-        previewTitleStyle: { background: "rgb(234, 158, 16)" },
+        previewTitleStyle: { background: "#739784" },
         content: "Toprospectivestudents.md"
     }
 ]

@@ -1,0 +1,39 @@
+.information{
+
+}
+
+.people{
+    
+}
+
+.professor{
+    width: 100%;
+    height: 50rem;
+    padding-top:5rem;
+    padding-bottom:5rem;
+}
+.professor-name{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-right:2rem;
+}
+.professor-name-english{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
+}
+
+.professor-name-chineese{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
+    margin-left:2rem;
+}
+.professor-image-holder{
+    
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}

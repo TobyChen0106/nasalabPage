@@ -10,12 +10,13 @@ import { postlist } from '../../posts/postlist.js'
 
 class News extends Component {
 	render() {
-		const lists = postlist.filter(i => i.tag === "News").map((i, index) => (
+		const lists = postlist.filter(i => i.previewTag === "News").map((i, index) => (
 			<div key={index} className="">
-				<NavLink style={{ textDecoration: 'none' }} to={"/posts/" + i} className="link black">
-					<div className="postPreview" style= {i.previewStyle}>
-							<img className="previewImage" src={i.previewImage} style={i.previewImageStyle}/>
-							<div className="previewTitle"> {i.previewTitle}</div>
+				<NavLink style={{ textDecoration: 'none' }} to={"/posts/" + index} className="link black">
+					<div className="postPreview" style={i.previewStyle}>
+						<div className="previewTag" style={i.previewTagStyle}>{i.previewTag}</div>
+						<img className="previewImage" src={i.previewImage} style={i.previewImageStyle} />
+						<div className="previewTitle" style={i.previewTitleStyle}> {i.previewTitle}</div>
 					</div>
 				</NavLink>
 			</div>

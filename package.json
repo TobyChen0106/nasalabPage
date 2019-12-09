@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "leaflet": "^1.6.0",
     "marked": "^0.7.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.8.6",
+    "react-iframe": "^1.8.0",
+    "react-leaflet": "^2.6.0",
+    "react-rounded-image": "^2.0.2",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "yarn": "^1.17.3"
